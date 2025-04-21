@@ -1,13 +1,16 @@
-apiversion: v1
-kind: Pod 
+# This is a sample pod yaml
+
+apiVersion: v1
+kind: Pod
 metadata:
-  name: nginx
+  name: nginx-pod
   labels:
     env: demo
     type: frontend
 spec:
   containers:
-    - name: nginx-container
-      image: nginx
-      ports: 
-      - containerPort: 80
+  - name: nginx-container
+    image: nginx
+    ports:
+    - containerPort: 80 
+  --validate=false
