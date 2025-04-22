@@ -15,6 +15,6 @@ spec:
       containers:
       - name: nginx-container
         image: nginx
-
+  replicas: 3
 
 #yaml for rc(repication controller)
